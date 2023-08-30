@@ -9,6 +9,7 @@
 
     header {
         @include flex(row, center, center, no-wrap);
+        
         background-color: #141d2b;
         color: white;
         height: 20vh;
