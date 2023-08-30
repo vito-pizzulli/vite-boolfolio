@@ -5,7 +5,12 @@
 </script>
 
 <style lang="scss" scoped>
+    @use '../styles/partials/mixins' as *;
 
+    main {
+        background-color: #41587e;
+        height: 80vh;
+    }
 </style>
 
 <template>
