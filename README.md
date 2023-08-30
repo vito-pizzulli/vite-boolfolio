@@ -1,7 +1,29 @@
-# Vue 3 + Vite
+<p align="center">
+    <a href="https://vuejs.org" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png" height="150"></a>
+    <a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" height="150"></a>
+    <a href="https://sass-lang.com/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1200px-Sass_Logo_Color.svg.png" height="150"></a>
+</p>
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+# Laravel Boolfolio - API
 
-## Recommended IDE Setup
+Continuiamo a lavorare sul codice dei giorni scorsi, ma in una nuova repo.  
+L’esercizio di oggi è suddiviso in milestone ed è importante che ne seguiate l’ordine.  
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Milestone 1
+nome repo 1: `laravel-api`  
+Aggiungiamo al nostro progetto Laravel una nuovo Api/ProjectController.  
+Questo controller risponderà a delle richieste via API e si occuperà di restituire la lista dei progetti presenti nel database in formato json.  
+
+## Milestone 2
+Testiamo la chiamata API tramite Postman e assicuriamoci di ricevere i dati correttamente.  
+
+## Milestone 3
+nome repo 2: `vite-boolfolio`  
+Iniziamo ad occuparci della parte front-office della nostra applicazione: creiamo un nuovo progetto Vue 3 con Vite e installiamo axios. Colleghiamo questo progetto ad una repo separata.  
+
+## Milestone 4
+Nel componente principale della nostra Vue App facciamo una chiamata API all’endpoint costruito nel progetto Laravel (milestone 1) e recuperiamo tutti i progetti dal nostro back-end.  
+Stampiamo in console i risultati e verifichiamo di ricevere i dati correttamente.  
+
+## Bonus
+Creiamo un nuovo componente ProjectCard, che corrisponde ad una card per visualizzare un progetto. Utilizziamo questo componente per visualizzare tutti i progetti ricevuti tramite API.
