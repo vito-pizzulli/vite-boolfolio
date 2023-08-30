@@ -1,7 +1,12 @@
 <script>
+    import AppProjectCard from './AppProjectCard.vue';
     import axios from 'axios';
     export default {
         name: 'AppMain',
+
+        components: {
+            AppProjectCard
+        },
 
         data() {
             return {
@@ -15,8 +20,9 @@
                 axios.get(this.apiUrl, {
                     params: {}
                 })
-                .then(function (response) {
+                .then((response) => {
                     console.log(response.data.results.data);
+                    this.projects = response.data.results.data;
                 })
                 .catch(function (error) {
                     console.log(error);
@@ -41,6 +47,10 @@
 
 <template>
     <main>
-        <h1>Main</h1>
+        <div class="container">
+            <AppProjectCard v-for="project in projects"
+                :project="project"
+            />
+        </div>
     </main>
 </template>
