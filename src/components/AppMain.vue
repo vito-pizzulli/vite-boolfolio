@@ -42,6 +42,14 @@
     main {
         background-color: #41587e;
         height: 80vh;
+        overflow-y: scroll;
+
+        div.container {
+            @include flex(row, center, space-between, wrap);
+
+            width: 80%;
+            margin: auto;
+        }
     }
 </style>
 
