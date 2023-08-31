@@ -39,8 +39,8 @@
     @use '../styles/partials/mixins' as *;
 
     main {
-        background-color: #41587e;
-        height: 75vh;
+        background-color: #ebeffd;
+        height: 85vh;
         overflow-y: scroll;
 
         div.container {
@@ -48,6 +48,7 @@
 
             width: 80%;
             margin: auto;
+            padding: 3rem;
         }
     }
 </style>

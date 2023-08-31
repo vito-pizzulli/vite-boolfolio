@@ -29,15 +29,19 @@
     header {
         @include flex(row, space-around, center, no-wrap);
         
-        background-color: #141d2b;
+        background-color: #001533;
         color: white;
         height: 15vh;
         
         h1 {
-            font-size: 3rem;
+            font-size: 4rem;
+
+            span {
+                color: #00df6b;
+            }
         }
 
-        ul {
+        nav ul {
             @include flex(row, space-around, center, no-wrap);
 
             li {
@@ -48,6 +52,11 @@
                 a {
                     color: white;
                     text-decoration: none;
+                    transition: all .3s;
+
+                    &:hover {
+                        color: #00df6b;
+                    }
                 }
             }
         }
@@ -56,7 +65,7 @@
 
 <template>
     <header>
-        <h1>Boolfolio</h1>
+        <h1><span>My</span> Boolfolio</h1>
         <nav>
             <ul>
                 <li v-for="link in links">
