@@ -30,3 +30,6 @@ Creiamo un nuovo componente ProjectCard, che corrisponde ad una card per visuali
 
 ## Milestone 5
 Inseriamo vue-router nel nostro progetto e creiamo almeno due pagine navigabili, una delle quali visualizzi la lista dei post recuperata via api.
+
+### Bonus
+Creiamo un pagina di show per i singoli post, con una chiamata api apposita.
