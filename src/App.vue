@@ -1,12 +1,14 @@
 <script>
-  import AppBody from './components/AppBody.vue';
-  export default {
-    name: 'App',
+    import AppHeader from './components/AppHeader.vue';
+    import AppFooter from './components/AppFooter.vue';
+    export default {
+        name: 'App',
 
-    components: {
-      AppBody
+        components: {
+            AppHeader,
+            AppFooter
+        }
     }
-  }
 </script>
 
 <style lang="scss">
@@ -14,5 +16,7 @@
 </style>
 
 <template>
-  <AppBody />
+  <AppHeader />
+  <router-view></router-view>
+  <AppFooter />
 </template>
