@@ -21,7 +21,6 @@
                     params: {}
                 })
                 .then((response) => {
-                    console.log(response.data.results.data);
                     this.projects = response.data.results.data;
                 })
                 .catch(function (error) {
