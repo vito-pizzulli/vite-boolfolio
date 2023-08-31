@@ -20,8 +20,13 @@
         padding: 1rem;
         border-radius: 10px;
 
-        h1 {
-            font-size: 1.5rem;
+        h2 {
+            font-size: 1.3rem;
+        }
+
+        img {
+            width: 100%;
+            height: 50%;
         }
 
         div.project-technologies span {
@@ -32,7 +37,13 @@
 
 <template>
     <div id="project-card">
-        <h1>Title: {{ project.title }}</h1>
+        <h2>
+            <router-link :to="{ name: 'projects.show', params: { slug: project.slug }}">
+                {{ project.title }}
+            </router-link>
+        </h2>
+        <img v-if="project.image.startsWith('http')" :src="project.image" alt="{{ project.title }}">
+        <img v-else :src="'http://127.0.0.1:8000/storage/' + project.image" alt="{{ project.title }}">
         <p><strong>Description:</strong> {{ project.description }}</p>
         <p><strong>GitHub Page Link:</strong> {{ project.link }}</p>
         <p><strong>Creation date:</strong> {{ project.creation_date }}</p>
