@@ -1,6 +1,25 @@
 <script>
     export default {
         name: 'AppHeader',
+
+        data() {
+            return {
+                links: [
+                    {
+                        route: 'home',
+                        name: 'Home'
+                    },
+                    {
+                        route: 'projects.index',
+                        name: 'Projects'
+                    },
+                    {
+                        route: 'about-me',
+                        name: 'About Me'
+                    }
+                ]
+            }
+        }
     }
 </script>
 
@@ -8,7 +27,7 @@
     @use '../styles/partials/mixins' as *;
 
     header {
-        @include flex(row, center, center, no-wrap);
+        @include flex(row, space-around, center, no-wrap);
         
         background-color: #141d2b;
         color: white;
@@ -17,11 +36,35 @@
         h1 {
             font-size: 3rem;
         }
+
+        ul {
+            @include flex(row, space-around, center, no-wrap);
+
+            li {
+                list-style-type: none;
+                margin-left: 3rem;
+                font-size: 1.5rem;
+                
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
     }
 </style>
 
 <template>
     <header>
         <h1>Boolfolio</h1>
+        <nav>
+            <ul>
+                <li v-for="link in links">
+                    <router-link :to="{ name: link.route }">
+                        {{ link.name }}
+                    </router-link>
+                </li>
+            </ul>
+        </nav>
     </header>
 </template>
