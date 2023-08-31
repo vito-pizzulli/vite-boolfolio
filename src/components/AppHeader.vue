@@ -12,7 +12,7 @@
         
         background-color: #141d2b;
         color: white;
-        height: 20vh;
+        height: 15vh;
         
         h1 {
             font-size: 3rem;
