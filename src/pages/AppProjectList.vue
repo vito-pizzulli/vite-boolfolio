@@ -152,6 +152,10 @@
                                 color: #00df6b;
                             }
                         }
+
+                        &:first-of-type {
+                            cursor: default;
+                        }
                     }
                 }
             } 
