@@ -31,10 +31,10 @@
         
         background-color: #001533;
         color: white;
-        height: 15vh;
+        height: 10vh;
         
         h1 {
-            font-size: 4rem;
+            font-size: 3rem;
 
             span {
                 color: #00df6b;
@@ -47,7 +47,7 @@
             li {
                 list-style-type: none;
                 margin-left: 3rem;
-                font-size: 1.5rem;
+                font-size: 1.2rem;
                 
                 a {
                     color: white;

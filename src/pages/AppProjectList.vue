@@ -76,14 +76,14 @@
 
     main {
         background-color: #ebeffd;
-        height: 85vh;
+        height: 80vh;
         overflow-y: scroll;
 
         div.container {
 
             width: 80%;
             margin: auto;
-            padding: 3rem;
+            padding: 1rem;
 
             div#navigation-bar {
                 @include flex(row, space-between, center, no-wrap);
@@ -136,10 +136,10 @@
                     li {
                         list-style-type: none;
                         margin: 0 1.5rem;
-                        font-size: 1.5rem;
+                        font-size: 1.2rem;
 
                         i {
-                            font-size: 1.5rem;
+                            font-size: 1.2rem;
                             transition: all .3s;
 
                             &.disabled {
