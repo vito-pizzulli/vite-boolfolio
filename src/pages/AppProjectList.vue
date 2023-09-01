@@ -76,7 +76,7 @@
 
     main {
         background-color: #ebeffd;
-        height: 80vh;
+        height: 90vh;
         overflow-y: scroll;
 
         div.container {
