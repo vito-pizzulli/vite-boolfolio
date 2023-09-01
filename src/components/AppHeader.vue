@@ -11,7 +11,7 @@
                     },
                     {
                         route: 'projects.index',
-                        name: 'Projects'
+                        name: 'My Projects'
                     },
                     {
                         route: 'about-me',
